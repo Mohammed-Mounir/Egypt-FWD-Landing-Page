@@ -40,7 +40,7 @@ const addSmoothScroll = (trackLink) => {
 };
 
 const hideHeader = () => {
-  timeOut = setTimeout(function () {
+  timeOut = setTimeout(() => {
     header.classList.add("hide-header");
   }, 5000);
 };
@@ -206,12 +206,12 @@ const createNewTrackLink = () => {
   return newLi;
 };
 
-const openModal = function () {
+const openModal = () => {
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
 };
 
-const closeModal = function () {
+const closeModal = () => {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
 };
@@ -234,7 +234,7 @@ btnTop.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-addNewTrack.addEventListener("click", function (evt) {
+addNewTrack.addEventListener("click", (evt) => {
   evt.preventDefault();
   console.log(featuredTracks.childElementCount);
   if (featuredTracks.childElementCount < 8) {
@@ -248,7 +248,7 @@ addNewTrack.addEventListener("click", function (evt) {
 
 btnCloseModal.addEventListener("click", closeModal);
 
-document.addEventListener("keydown", function (evt) {
+document.addEventListener("keydown", (evt) => {
   if (evt.key === "Escape" && !modal.classList.contains("hidden")) {
     closeModal();
   }
