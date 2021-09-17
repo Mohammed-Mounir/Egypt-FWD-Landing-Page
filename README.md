@@ -1,6 +1,6 @@
 # Egypt-FWD-Landing-Page
 
-## Responsive Egypt FWD Web Dev. Landing Page
+## Responsive Egypt FWD Web Dev. Landing Page using HTML5, CSS3 and JS ES6
 
 ## Features
 
@@ -8,7 +8,7 @@
 - Highlight active section and section link.
 - Smooth scroll.
 - Go top of the page button.
-- Responsive (CSS Grid - Flexbox - Rem unit).
+- Responsive.
 
 ## Additional features
 
